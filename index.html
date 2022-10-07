@@ -1,0 +1,207 @@
+<!-- Created by Dayu Wang (dwang@stchas.edu) on 2022-10-07 -->
+
+<!-- Last updated by Dayu Wang (dwang@stchas.edu) on 2022-10-07 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPT-105 - Essay Grading Scheme</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <p>
+        <img style="display:block;border:none;margin:0 auto;padding:0;width:150px;height:auto;" src="/image/Downloaded_2020-08-15_-_SCC_Logo_(Black)_-_SVG.svg" alt="St. Charles Community College">
+    </p>
+    <p style="margin-top:18pt;font-size:10pt;text-align:center;">
+        CPT-105 - Ethics in Technology
+    </p>
+    <p style="margin-top:18pt;font-size:12pt;font-weight:bold;text-align:center;">
+        Essay Grading Scheme
+    </p>
+    <table style="margin-top:24pt;">
+        <tr>
+            <td style="border:none;padding:0;vertical-align:top;width:12%;">
+                <label for="assignment">Assignment:</label>
+            </td>
+            <td style="border:none;border-bottom:1px solid black;padding:0 0 1pt 0;">
+                <input id="assignment" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td style="border:none;padding:12pt 0 0 0 ;vertical-align:top;width:15%;">
+                <label for="student-name">Student Name:</label>
+            </td>
+            <td style="border:none;border-bottom:1px solid black;padding:12pt 0 1pt 0;">
+                <input id="student-name" type="text">
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top:32pt;">
+        <tr>
+            <td style="border-top:2px solid black;border-left:2px solid black;font-weight:bold;color:whitesmoke;background-color:black;text-align:center;">
+                Points
+            </td>
+            <td style="border-top:2px solid black;font-weight:bold;color:whitesmoke;background-color:black;text-align:center;">
+                Item
+            </td>
+            <td style="border-top:2px solid black;font-weight:bold;color:whitesmoke;background-color:black;text-align:center;">
+                Score
+            </td>
+            <td style="border-top:2px solid black;border-right:2px solid black;font-weight:bold;color:whitesmoke;background-color:black;text-align:center;">
+                Additional Comments
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;"><label for="similarity-score"><label for="similarity-comment">Similarity</label></label></td>
+            <td>
+                <p>Unicheck similarity score should be less than 20%.</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 20% and 33.33% &#10132; "<strong>&minus;3</strong>"</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 33.34% and 49.99% &#10132; "<strong>&minus;6</strong>"</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 50% and 66.66% &#10132; "<strong>&minus;10</strong>"</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>66.67% and above &#10132; "<strong>0</strong>" for the entire essay (<strong>no</strong> <span style="text-decoration:line-through;color:black;">further grading</span>)</p>
+            </td>
+            <td style="padding:0;">
+                <input id="similarity-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="similarity-comment" wrap="soft" style="height:110px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;width:68px;"><label for="late-work-score"><label for="late-work-comment">Late work</label></label></td>
+            <td>
+                <p style='margin:0 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Last submission made 48 hours before deadline &#10132; "<strong>&minus;3</strong>"</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Late work &#10132; "<strong>&minus;3</strong>"</p>
+            </td>
+            <td style="padding:0;">
+                <input id="late-work-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="late-work-comment" wrap="soft" style="height:40px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="length-score"><label for="length-comment">8</label></label></td>
+            <td>
+                <p>Length of essay should be <span style="text-decoration:underline;">between 800 and 1000 words</span>.</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Less than 100 words &#10132; "<strong>0</strong>" for the entire essay (<strong>no</strong> <span style="text-decoration:line-through;color:black;">further grading</span>)</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 100 and 399 words &#10132; "<strong>6</strong>" for the entire essay (<strong>no</strong> <span style="text-decoration:line-through;color:black;">further grading</span>)</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 400 and 499 words &#10132; "<strong>2</strong>" out of 8</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 500 and 599 words &#10132; "<strong>4</strong>" out of 8</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 600 and 699 words &#10132; "<strong>6</strong>" out of 8</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Between 700 and 799 words &#10132; "<strong>7</strong>" out of 8</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Greater then 1100 words &#10132; "<strong>&minus;1</strong>" for every 100 extra words</p>
+            </td>
+            <td style="padding:0;">
+                <input id="length-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="length-comment" wrap="soft" style="height:170px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="title-score"><label for="title-comment">1</label></label></td>
+            <td>Essay has a title (with some details in it).</td>
+            <td style="padding:0;">
+                <input id="title-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="title-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="font-score"><label for="font-comment">1</label></label></td>
+            <td>Font, size, and color are consistent throughout the paper.</td>
+            <td style="padding:0;">
+                <input id="font-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="font-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="paragraph-score"><label for="paragraph-comment">1</label></label></td>
+            <td>Essay is written in paragraphs with appropriate indentation and spacing.</td>
+            <td style="padding:0;">
+                <input id="paragraph-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="paragraph-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="person-score"><label for="person-comment">1</label></label></td>
+            <td>Essay is written in the third person.</td>
+            <td style="padding:0;">
+                <input id="person-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="person-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="idea-score"><label for="idea-comment">1</label></label></td>
+            <td>Author's central point/idea can be obviously found in the first paragraph.</td>
+            <td style="padding:0;">
+                <input id="idea-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="idea-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="fact-score"><label for="fact-comment">1</label></label></td>
+            <td>There are sufficient facts/evidence to support the central point/idea.</td>
+            <td style="padding:0;">
+                <input id="fact-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="fact-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="detail-score"><label for="detail-comment">1</label></label></td>
+            <td>There are sufficient details (e.g., numbers) in the essay.</td>
+            <td style="padding:0;">
+                <input id="detail-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="detail-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="diagram-score"><label for="diagram-comment">2</label></label></td>
+            <td>
+                <p>Essay has at least 1 professional diagram.</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>No diagram &#10132; "<strong>0</strong>" out of 2</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Using screenshots as diagrams &#10132; "<strong>0</strong>" out of 2</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Using tables as diagrams &#10132; "<strong>0.5</strong>" out of 2</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>No professional caption below diagrams &#10132; "<strong>1</strong>" out of 2</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Low image quality of diagrams &#10132; "<strong>1</strong>" out of 2</p>
+            </td>
+            <td style="padding:0;">
+                <input id="diagram-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="diagram-comment" wrap="soft" style="height:130px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-left:2px solid black;text-align:center;font-weight:bold;"><label for="reference-score"><label for="reference-comment">2</label></label></td>
+            <td>
+                <p>Essay should use at least <span style="text-decoration:underline;">3 external references</span>.</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>No references &#10132; "<strong>0</strong>" out of 2</p>
+                <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>References not listed at the end as a separate section &#10132; "<strong>0</strong>" out of 2</p>
+            </td>
+            <td style="padding:0;">
+                <input id="reference-score" type="text" style="text-align:center;">
+            </td>
+            <td style="border-right:2px solid black;padding:0;">
+                <textarea id="reference-comment" wrap="soft" style="height:20px;"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
