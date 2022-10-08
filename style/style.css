@@ -1,6 +1,6 @@
 /* Created by Dayu Wang (dwang@stchas.edu) on 2022-10-07 */
 
-/* Last updated by Dayu Wang (dwang@stchas.edu) on 2022-10-07 */
+/* Last updated by Dayu Wang (dwang@stchas.edu) on 2022-10-08 */
 
 
 body {
@@ -9,7 +9,9 @@ body {
     font-size: 11pt;
     color: black;
     text-align: left;
-    margin: 12pt;
+    margin: 12pt auto;
+    width: 900px;
+    -webkit-print-color-adjust: exact !important;
 }
 
 p {
@@ -45,7 +47,7 @@ input {
     color: blue;
     margin: 0;
     padding: 0;
-    background-color: #ffff99;
+    background-color: transparent;
 }
 
 input:focus {
@@ -57,7 +59,7 @@ textarea {
     margin: 0;
     border: none;
     outline: none;
-    background-color: #ffff99;
+    background-color: transparent;
     display: flex;
     width: calc(100% - 10px);
     resize: none;
@@ -65,4 +67,14 @@ textarea {
     font-size: 9pt;
     color: blue;
     overflow: hidden;
+}
+
+@media print {
+    @page {
+        size: letter;
+        margin: 0.25in;
+    }
+    body { margin: 0 auto; }
+    table { page-break-inside: avoid; }
+    button { display: none; }
 }
