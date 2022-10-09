@@ -1,6 +1,6 @@
 // Created by Dayu Wang (dwang@stchas.edu) on 2022-10-08
 
-// Last updated by Dayu Wang (dwang@stchas.edu) on 2022-10-08
+// Last updated by Dayu Wang (dwang@stchas.edu) on 2022-10-09
 
 
 /** Calculates the total score.
@@ -43,6 +43,9 @@ now = function() {
 window.onload = function() {
     const scores = document.querySelectorAll(".score");
     for (let i = 0; i < scores.length; i++) {
+        scores.item(i).addEventListener("keydown", (event) => {
+            if (event.which === 38 || event.which === 40) { event.preventDefault(); }
+        })
         scores.item(i).addEventListener("keyup", (event) => {
             if (event.which === 40) {  // Arrow down
                 if (i !== scores.length - 1) { scores.item(i + 1).focus(); }
@@ -54,4 +57,29 @@ window.onload = function() {
             }
         });
     }
+
+    document.getElementById("print").addEventListener("click", () => {
+        const studentNumber = document.getElementById("number").value.toString().trim();
+        const studentName = document.getElementById("student-name").value.trim();
+        const assignmentName = document.getElementById("assignment").value.trim();
+        if (studentNumber === "") { window.alert("[Error] Missing student number"); return; }
+        if (studentName === "") { window.alert("[Error] Missing student name"); return; }
+        if (assignmentName === "") { window.alert("[Error] Missing assignment name"); return; }
+        let titleName = studentNumber.length === 1 ? '0' : '';
+        titleName += studentNumber + " - ";
+        titleName += studentName + " - ";
+        titleName += assignmentName + " - ";
+        titleName += "Grading Scheme - ";
+
+        // Semester (will change)
+        titleName += "CPT-105-R82 (22/FA)";
+
+        titleName += " - PDF";
+
+        if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(titleName).then();
+        }
+        document.title = titleName.replaceAll('/', '-').replaceAll(' ', '_');
+        window.print();
+    });
 };
