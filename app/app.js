@@ -10,7 +10,7 @@ totalScore = function() {
     let result = 0;
     let scores = document.getElementsByClassName("score");
     for (let i = 0; i < scores.length; i++) {
-        if (scores.item(i).value.trim() !== "") { result += parseInt(scores.item(i).value); }
+        if (scores.item(i).value.trim() !== "") { result += parseFloat(scores.item(i).value); }
     }
     if (result > 20) { return 20; }
     else if (result < 0) { return 0; }
