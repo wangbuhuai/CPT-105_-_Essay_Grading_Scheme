@@ -62,9 +62,9 @@ window.onload = function() {
         const studentNumber = document.getElementById("number").value.toString().trim();
         const studentName = document.getElementById("student-name").value.trim();
         const assignmentName = document.getElementById("assignment").value.trim();
-        if (studentNumber === "") { window.alert("[Error] Missing student number"); return; }
-        if (studentName === "") { window.alert("[Error] Missing student name"); return; }
-        if (assignmentName === "") { window.alert("[Error] Missing assignment name"); return; }
+        if (studentNumber === "") { alert("[Error] Missing student number"); return; }
+        if (studentName === "") { alert("[Error] Missing student name"); return; }
+        if (assignmentName === "") { alert("[Error] Missing assignment name"); return; }
         let titleName = studentNumber.length === 1 ? '0' : '';
         titleName += studentNumber + " - ";
         titleName += studentName + " - ";
