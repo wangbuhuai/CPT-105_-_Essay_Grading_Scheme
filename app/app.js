@@ -72,7 +72,7 @@ window.onload = function() {
         titleName += "Grading Scheme - ";
 
         // Semester (will change)
-        titleName += "CPT-105-R82 (22/FA)";
+        titleName += "CPT-105-81/N09 (23/SP)";
 
         titleName += " - PDF";
 
