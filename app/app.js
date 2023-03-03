@@ -1,7 +1,10 @@
 // Created by Dayu Wang (dwang@stchas.edu) on 2022-10-08
 
-// Last updated by Dayu Wang (dwang@stchas.edu) on 2022-10-09
+// Last updated by Dayu Wang (dwang@stchas.edu) on 2023-03-03
 
+
+const SECTION = "81";
+const SEMESTER = "23/SP";
 
 /** Calculates the total score.
     @returns {number}: calculated total score
@@ -70,10 +73,9 @@ window.onload = function() {
         titleName += studentName + " - ";
         titleName += assignmentName + " - ";
         titleName += "Grading Scheme - ";
-
-        // Semester (will change)
-        titleName += "CPT-105-81/N09 (23/SP)";
-
+        titleName += "CPT-105-";
+        titleName += SECTION;
+        titleName += " (" + SEMESTER + ")";
         titleName += " - PDF";
 
         if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
