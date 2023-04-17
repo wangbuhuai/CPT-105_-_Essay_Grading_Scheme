@@ -1,10 +1,13 @@
 // Created by Dayu Wang (dwang@stchas.edu) on 2022-10-08
 
-// Last updated by Dayu Wang (dwang@stchas.edu) on 2023-03-03
+// Last updated by Dayu Wang (dwang@stchas.edu) on 2023-04-17
 
 
 const SECTION = "81";
 const SEMESTER = "23/SP";
+const ASSIGNMENT = "Case-Study Essay 9";
+const TOTAL_SCORE = 20;
+const AUTOFILL = false;
 
 /** Calculates the total score.
     @returns {number}: calculated total score
@@ -44,6 +47,16 @@ now = function() {
 };
 
 window.onload = function() {
+    if (AUTOFILL) {
+        const ass = document.getElementById("assignment");
+        ass.value = ASSIGNMENT;
+        ass.tabIndex = -1;
+        ass.readOnly = true;
+    }
+
+    const totals = document.getElementsByClassName("total");
+    for (let i = 0; i < totals.length; i++) { totals.item(i).textContent = TOTAL_SCORE.toString(); }
+
     const scores = document.querySelectorAll(".score");
     for (let i = 0; i < scores.length; i++) {
         scores.item(i).addEventListener("keydown", (event) => {

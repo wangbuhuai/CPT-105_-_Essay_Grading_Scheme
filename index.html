@@ -42,7 +42,7 @@
                 <label for="assignment">Assignment:</label>
             </td>
             <td style="border:none;border-bottom:1px solid black;padding:0 0 1pt 0;width:354px;">
-                <input id="assignment" type="text" value="Case-Study Essay 5" readonly>
+                <input id="assignment" type="text">
             </td>
         </tr>
     </table>
@@ -81,6 +81,7 @@
             <td style="border-left:2px solid black;text-align:center;"><label for="late-work-score"><label for="late-work-comment">Late work</label></label></td>
             <td>
                 <p style='margin:0 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span><span style="text-decoration: underline;">Last submission</span> made <span style="text-decoration: underline;">48 hours before deadline</span> &#10132; "<strong>+2</strong>"</p>
+                <p style="margin:3pt 0 0 11pt;padding:0;font-size:9pt;">(The total score <strong>cannot</strong> exceed <strong class="total"></strong> points.)</p>
                 <p style='margin:3pt 0 0 11pt;padding:0;font-size:10pt;text-indent:-5.5pt;'><span style='display:inline-block;width:5.5pt;'>&bull;</span>Late work &#10132; "<strong>&minus;3</strong>"</p>
             </td>
             <td style="padding:0;">
@@ -214,7 +215,7 @@
         </tr>
         <tr>
             <td style="border-bottom:2px solid black;border-left:2px solid black;text-align:right;font-weight:bold;background:#ffff99;" colspan="2">Total</td>
-            <td id="total-score" style="border-bottom:2px solid black;font-weight:bold;background:#ffff99;text-align:center;color:blue;">0</td>
+            <td style="border-bottom:2px solid black;background:#ffff99;text-align:center;color:blue;"><strong id="total-score">0</strong>/<span class="total"></span></td>
             <td style="border-right:2px solid black;border-bottom:2px solid black;text-align:right;background:#ffff99;color:blue;">Grader: <strong>Dayu Wang</strong></td>
         </tr>
     </table>
