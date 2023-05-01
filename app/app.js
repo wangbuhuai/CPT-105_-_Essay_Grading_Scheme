@@ -7,7 +7,7 @@ const SECTION = "81";
 const SEMESTER = "23/SP";
 const ASSIGNMENT = "Case-Study Essay 9";
 const TOTAL_SCORE = 20;
-const AUTOFILL = false;
+const AUTOFILL = true;
 
 /** Calculates the total score.
     @returns {number}: calculated total score
